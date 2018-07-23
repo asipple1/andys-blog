@@ -1,0 +1,26 @@
+@import 'plugins/reset';
+@import 'settings/variables';
+body {
+  background: #55bcc9;
+  &:before, &:after {
+    z-index: -1;
+    content: '';
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    max-width: 1600px;
+    margin: auto;
+    background: -webkit-linear-gradient(0deg,rgba(white, 0.12) 1px,transparent 0px) 0 0 / var(--gridSize) auto;
+    -webkit-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+    transform: skewY(10deg);
+  }
+  &:after {
+    content: '';
+    border-right: 1px solid rgba(white, 0.12);
+  }
+}

@@ -1,0 +1,12 @@
+$primary-color: #3feee6;
+$color-dark-teal: #55bcc9;
+$primary-color-light: rgba($primary-color, 7%);
+$grid-size: 100px;
+$grid-cols: 8;
+
+:root {
+  --gridSize: 200px;
+  --cols: 8;
+  --gridSize: calc(100vw / var(--cols));
+  --max-width: 1600px;
+}
